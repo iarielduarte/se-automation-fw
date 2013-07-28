@@ -1,0 +1,5 @@
+http://www.softwareishard.com/blog/firebug/automate-page-load-performance-testing-with-firebug-and-selenium/
+http://www.softwareishard.com/blog/har-12-spec/
+http://www.softwareishard.com/blog/har-adopters/
+http://www.janodvarko.cz/blog/
+http://testng.org/doc/selenium.html
