@@ -1,24 +1,25 @@
 package ar.com.selenium.fw.scripts;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
+import org.uiautomation.ios.client.uiamodels.impl.augmenter.Configurable;
+import org.uiautomation.ios.client.uiamodels.impl.augmenter.IOSDriverAugmenter;
+import org.uiautomation.ios.communication.WebDriverLikeCommand;
 
 import ar.com.selenium.fw.core.FFDriver;
 import ar.com.selenium.fw.pages.MainPage;
 import ar.com.selenium.fw.pages.SearchResultPage;
 
 public class SmokeTest {
+	
 	WebDriver driver;
  
   @BeforeSuite
-  public void BeforeSuite() {
+  public void beforeSuite() {
 	  driver = FFDriver.getDriver();
   }
 
@@ -27,30 +28,30 @@ public class SmokeTest {
 	  driver.quit();
   }
   
-  
   @Test(description="Go to Wikipedia Home Page")
   public void verifyEnterOnWikipedia() {
 	  driver.get("http://www.wikipedia.org/");
-	  /*Verify home page title*/
-	  Reporter.log("Verify correct title is displapyed");
+	  Reporter.log("Verify correct title is displayed");
 	  Assert.assertEquals(driver.getTitle(), "Wikipedia");
-	 
   }
   
-  @Test(description="Search button functionality")
+  
+  @Test(description="Go to Wikipedia Home Page")
   public void verifySearchButtonFunctionality() {
 	  driver.get("http://www.wikipedia.org/");
 	  MainPage home = new MainPage(driver);
 	  home.getSearchText().sendKeys("Selenium");
 	  home.getSearchButton().click();
-	  SearchResultPage searchResutl = new SearchResultPage(driver);
-	  String expectedResutl = "Selenium";
-	  System.out.println(searchResutl.getTitleArticleText());
-	  Reporter.log("Verify correct search button functionality");
-	  /*Verify expected result of the search*/
-	  Assert.assertTrue(searchResutl.getTitleArticleText().getText().equals(expectedResutl));
+	  Reporter.log("Verufy correct search button functionality");
+	  SearchResultPage resultPage = new SearchResultPage(driver);
+	  Assert.assertTrue(resultPage.getTitleArticle().getText().equals("xxxxxxxx"));
   }
   
+  public void iosDriverTest(){
+	  Configurable c = IOSDriverAugmenter.augment(driver);
+	  c.setConfiguration(WebDriverLikeCommand.CLICK, "nativeEvents", false);
+	  
+  }
   
 
 }

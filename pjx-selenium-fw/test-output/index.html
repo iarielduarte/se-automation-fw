@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\se-automation-fw\pjx-selenium-fw\src\test\java\ar\com\selenium\fw\suites\FireFox.xml</span>
+                    <span>C:\selenium-fwk\pjx-selenium-fw\src\test\java\ar\com\selenium\fw\suites\Suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ar.com.selenium.fw.scripts.SmokeTest" hash-for-method="verifySearchButtonFunctionality">verifySearchButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ar.com.selenium.fw.scripts.SmokeTest" hash-for-method="verifyEnterOnWikipedia">verifyEnterOnWikipedia</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ar.com.selenium.fw.scripts.SmokeTest" hash-for-method="verifySearchButtonFunctionality">verifySearchButtonFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,6 +130,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ar.com.selenium.fw.scripts.SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonFunctionality">
+                  </a> <!-- verifySearchButtonFunctionality -->
+                  <span class="method-name">verifySearchButtonFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at ar.com.selenium.fw.scripts.SmokeTest.verifySearchButtonFunctionality(SmokeTest.java:44)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Go to Wikipedia Home Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -136,21 +166,12 @@
 (Go to Wikipedia Home Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchButtonFunctionality">
-                  </a> <!-- verifySearchButtonFunctionality -->
-                  <span class="method-name">verifySearchButtonFunctionality</span>
-                  <em>
-(Search button functionality)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\se-automation-fw\pjx-selenium-fw\src\test\java\ar\com\selenium\fw\suites\FireFox.xml</span>
+            <span class="header-content">C:\selenium-fwk\pjx-selenium-fw\src\test\java\ar\com\selenium\fw\suites\Suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -203,16 +224,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySearchButtonFunctionality')
 data.setCell(0, 2, 'ar.com.selenium.fw.scripts.SmokeTest')
-data.setCell(0, 3, 15591);
+data.setCell(0, 3, 21763);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyEnterOnWikipedia')
 data.setCell(1, 2, 'ar.com.selenium.fw.scripts.SmokeTest')
-data.setCell(1, 3, 2962);
+data.setCell(1, 3, 12339);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,13 +247,13 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifyEnterOnWikipedia</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Verify correct title is displapyed</span>
+                <span class="reporter-method-output">Verify correct title is displayed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifySearchButtonFunctionality</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Verify correct search button functionality</span>
+                <span class="reporter-method-output">Verufy correct search button functionality</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,20 +273,22 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">ar.com.selenium.fw.scripts.SmokeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">BeforeSuite</span>
+                <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verifyEnterOnWikipedia</span>
-                <span class="method-start">5903 ms</span>
+                <span class="method-start">15846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifySearchButtonFunctionality</span>
-                <span class="method-start">8875 ms</span>
+                <span class="method-start">28187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">24496 ms</span>
+                <span class="method-start">50042 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,9 +5,9 @@
     <classes>
       <class name="ar.com.selenium.fw.scripts.SmokeTest">
         <methods>
-          <include name="BeforeSuite"/>
           <include name="afterSuite"/>
           <include name="verifySearchButtonFunctionality"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- ar.com.selenium.fw.scripts.SmokeTest -->
     </classes>
