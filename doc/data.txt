@@ -3,3 +3,9 @@ http://www.softwareishard.com/blog/har-12-spec/
 http://www.softwareishard.com/blog/har-adopters/
 http://www.janodvarko.cz/blog/
 http://testng.org/doc/selenium.html
+
+
+http://ios-driver.github.io/ios-driver/safari.html
+http://grokbase.com/t/gg/webdriver/12c6c7yv3b/touch-events-on-iphone-webdriver
+https://github.com/calabash-driver/calabash-driver/tree/master/calabash-driver-common/src/main/java/sh/calaba/driver
+https://github.com/ios-driver/ios-driver/tree/eb9d1005048f472c6adc9bbd7782cbcfd3ffe349
