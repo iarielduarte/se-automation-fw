@@ -8,23 +8,23 @@
       <![CDATA[Verufy correct search button functionality]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="34174" started-at="2013-08-21T17:30:53Z" finished-at="2013-08-21T17:31:27Z">
+  <suite name="Suite" duration-ms="16297" started-at="2013-12-07T02:21:12Z" finished-at="2013-12-07T02:21:28Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="34174" started-at="2013-08-21T17:30:53Z" finished-at="2013-08-21T17:31:27Z">
+    <test name="Test" duration-ms="16297" started-at="2013-12-07T02:21:12Z" finished-at="2013-12-07T02:21:28Z">
       <class name="ar.com.selenium.fw.scripts.SmokeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@87bd5a0]" name="beforeSuite" is-config="true" duration-ms="15779" started-at="2013-08-21T14:30:37Z" finished-at="2013-08-21T14:30:53Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@2048a158]" name="beforeSuite" is-config="true" duration-ms="10158" started-at="2013-12-06T23:21:01Z" finished-at="2013-12-06T23:21:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="verifyEnterOnWikipedia()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@87bd5a0]" name="verifyEnterOnWikipedia" duration-ms="12339" started-at="2013-08-21T14:30:53Z" description="Go to Wikipedia Home Page" finished-at="2013-08-21T14:31:05Z">
+        <test-method status="PASS" signature="verifyEnterOnWikipedia()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@2048a158]" name="verifyEnterOnWikipedia" duration-ms="4747" started-at="2013-12-06T23:21:12Z" description="Go to Wikipedia Home Page" finished-at="2013-12-06T23:21:16Z">
           <reporter-output>
             <line>
               <![CDATA[Verify correct title is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyEnterOnWikipedia -->
-        <test-method status="FAIL" signature="verifySearchButtonFunctionality()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@87bd5a0]" name="verifySearchButtonFunctionality" duration-ms="21763" started-at="2013-08-21T14:31:05Z" description="Go to Wikipedia Home Page" finished-at="2013-08-21T14:31:27Z">
+        <test-method status="FAIL" signature="verifySearchButtonFunctionality()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@2048a158]" name="verifySearchButtonFunctionality" duration-ms="11538" started-at="2013-12-06T23:21:16Z" description="Go to Wikipedia Home Page" finished-at="2013-12-06T23:21:28Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -35,7 +35,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at ar.com.selenium.fw.scripts.SmokeTest.verifySearchButtonFunctionality(SmokeTest.java:44)
+	at ar.com.selenium.fw.scripts.SmokeTest.verifySearchButtonFunctionality(SmokeTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -69,7 +69,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchButtonFunctionality -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@87bd5a0]" name="afterSuite" is-config="true" duration-ms="154" started-at="2013-08-21T14:31:27Z" finished-at="2013-08-21T14:31:27Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ar.com.selenium.fw.scripts.SmokeTest@2048a158]" name="afterSuite" is-config="true" duration-ms="129" started-at="2013-12-06T23:21:28Z" finished-at="2013-12-06T23:21:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.523 sec <<< FAILURE!
+verifySearchButtonFunctionality(ar.com.selenium.fw.scripts.SmokeTest)  Time elapsed: 12.838 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at ar.com.selenium.fw.scripts.SmokeTest.verifySearchButtonFunctionality(SmokeTest.java:45)
