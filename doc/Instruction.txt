@@ -7,3 +7,9 @@ java -jar selenium-server-standalone-2.26.0.jar -role hub
 
 Starting a Node
 java -jar selenium-server-standalone-2.26.0.jar -role node  -hub http://localhost:4444/grid/register
+
+
+
+mvn clean install -DTARGET_URL=http://localhost:4444/ -DSUITE=RoomkeyFull_Production -DBROWSER=FIREFOX -DTIMEOUT=150
+
+mvn clean install -DSUITE=Suite
