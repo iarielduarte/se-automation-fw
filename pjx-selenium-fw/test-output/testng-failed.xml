@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="ar.com.selenium.fw.scripts.SmokeTest">
+      <class name="ar.com.selenium.fw.scripts.RegressionTest">
         <methods>
-          <include name="afterSuite"/>
-          <include name="verifySearchButtonFunctionality"/>
           <include name="beforeSuite"/>
+          <include name="verifySearchButtonFunctionality"/>
+          <include name="verifyEnterOnWikipedia"/>
         </methods>
-      </class> <!-- ar.com.selenium.fw.scripts.SmokeTest -->
+      </class> <!-- ar.com.selenium.fw.scripts.RegressionTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

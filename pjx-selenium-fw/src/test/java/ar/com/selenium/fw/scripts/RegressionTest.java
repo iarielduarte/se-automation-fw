@@ -11,17 +11,17 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 import ar.com.selenium.fw.core.FFDriver;
+import ar.com.selenium.fw.core.HCDriver;
 import ar.com.selenium.fw.pages.MainPage;
 import ar.com.selenium.fw.pages.SearchResultPage;
 
-public class SmokeTest {
+public class RegressionTest {
 	
 	WebDriver driver;
  
   @BeforeSuite
   public void beforeSuite() {
-//	  driver = FFDriver.getDriver(); //selenium-server
-	  driver = FFDriver.getFirefoxDriver();//selenium-firefox-driver
+	  driver = HCDriver.getWebDriver();
   }
 
   @AfterSuite
@@ -45,7 +45,7 @@ public class SmokeTest {
 	  home.getSearchButton().click();
 	  Reporter.log("Verify correct search button functionality");
 	  SearchResultPage resultPage = new SearchResultPage(driver);
-	  Assert.assertTrue(resultPage.getTitleArticle().getText().equals("xxxxxxxx"));
+	  Assert.assertTrue(resultPage.getTitleArticle().getText().equals("Selenium"));
   }
 
 }
